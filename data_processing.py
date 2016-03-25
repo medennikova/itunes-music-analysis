@@ -28,6 +28,7 @@ def target_to_numerical_format(df):
     Return an array with target labels in numerical format.
     """
     from sklearn import preprocessing
+    import pandas as pd
     le = preprocessing.LabelEncoder()
 
     # list the three categories
@@ -35,7 +36,7 @@ def target_to_numerical_format(df):
     le.fit(categories)
 
     # create an array with target labels
-    target = le.transform(train_df['category'])
+    target = le.transform(df['category'])
     return target
 
 def convert_df_to_array(df):
