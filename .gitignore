@@ -64,3 +64,17 @@ target/
 
 # pyenv
 .python-version
+
+
+# Misc
+Echo_nest_info.txt
+Untitled.ipynb
+iTunes Music Library copy.xml
+itunes_tracks
+labeled_tracks
+labeled_tracks.csv
+music_classifier.ipynb
+music_data.h5
+parse_tracks.py
+todo.txt
+use_in_every_notebook.py
