@@ -1,7 +1,10 @@
+from sklearn import preprocessing
+import pandas as pd
+import numpy as np
+
 def read_db_in_pandas(db):
     """Read the DB and return a DF.
     """
-    import pandas as pd
     # transpose data to have songs as rows
     df = pd.DataFrame(dict(db)).T
 
@@ -27,8 +30,6 @@ def target_to_numerical_format(df):
     using LabelEncoder scikit-learn function.
     Return an array with target labels in numerical format.
     """
-    from sklearn import preprocessing
-    import pandas as pd
     le = preprocessing.LabelEncoder()
 
     # list the three categories
@@ -44,7 +45,6 @@ def convert_df_to_array(df):
     forms a row, and features form columns.
     Return an array.
     """
-    import numpy as np
     # columns with numerical values
     cols = df.select_dtypes(exclude=[object]).columns
 
@@ -58,8 +58,6 @@ def standardize_data(train_data, test_data):
     using StandardScaler() module.
     Returns train_std, test_std.
     """
-    from sklearn import preprocessing
-
     # train the model
     std_scale = preprocessing.StandardScaler().fit(train_data)
     # perform standardization of features in the training set
