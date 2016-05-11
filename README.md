@@ -2,13 +2,9 @@
 ### Building music playlists with Scikit-Learn tools
 — March 2016 —
 
-This is a series of posts devoted to analysis of iTunes music library using Scikit-Learn tools and the Echo Nest API.
+This is a series of posts devoted to analysis of iTunes music library using Scikit-Learn tools and the Echo Nest API. I examine a variety of track attributes (e.g. tempo, time signature, energy) to build themed playlists.
 
-In this analysis, I detect tracks in my iTunes music library that would suit my fitness practices. I'm interested in three classes of music ("cycling", "ballet", "yoga").
-
-To solve that problem I use supervised machine learning classification algorithms: k-Neighbors, Random Forest, and SVM classifiers.
-
-One of the main goals of this analysis is to explore the basics of Scikit-Learn tools. Scikit-Learn is a popular Python package designed to give access to well-known ML algorithms within Python code. 
+To solve that problem I apply supervised machine learning classification algorithms: k-Neighbors, Random Forest, and SVM classifiers. I use Scikit-Learn, a popular Python package designed to give access to well-known ML algorithms within Python code. 
 
 The hero and the foundation of my analysis is the Echo Nest API, which provides broad and deep data on millions of artists and songs.
 
