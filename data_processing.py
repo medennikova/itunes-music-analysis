@@ -79,5 +79,3 @@ def reduce_dimensions(train_data, test_data):
     test_2d = pca.transform(test_data)
 
     return train_2d, test_2d
-
-
